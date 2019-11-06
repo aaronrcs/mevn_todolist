@@ -1,0 +1,25 @@
+{
+  "name": "mevn_todolist",
+  "version": "1.0.0",
+  "description": "Simple MEVN application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronrcs/mevn_todolist.git"
+  },
+  "author": "Aaron Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronrcs/mevn_todolist/issues"
+  },
+  "homepage": "https://github.com/aaronrcs/mevn_todolist#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongojs": "^3.1.0"
+  }
+}
