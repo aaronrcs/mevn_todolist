@@ -1,25 +1,17 @@
 {
-  "name": "mevn_todolist",
+  "name": "mytasklist",
   "version": "1.0.0",
-  "description": "Simple MEVN application",
+  "description": "Simple task manager",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aaronrcs/mevn_todolist.git"
-  },
-  "author": "Aaron Romero",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aaronrcs/mevn_todolist/issues"
-  },
-  "homepage": "https://github.com/aaronrcs/mevn_todolist#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongojs": "^3.1.0"
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.4",
+    "express": "^4.14.0",
+    "mongojs": "^2.4.0"
   }
 }

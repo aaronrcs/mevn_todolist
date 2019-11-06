@@ -1,23 +1,24 @@
-const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
+var express = require("express");
+var path = require("path");
+var bodyParser = require("body-parser");
 
-const tasks = require("./routes/tasks");
-const cors = require('cors');
+var tasks = require("./routes/tasks");
+var cors = require("cors");
 
-let port = 3000;
+var port = 3000;
 
-const app = express();
-
+var app = express();
 app.use(cors());
 
+// Set Static Folder
 app.use(express.static(path.join(__dirname, "client")));
 
+// Body Parser MW
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/api", tasks);
 
-app.listen(port, () => {
-    console.log("Server is running on port ", port);
-})
+app.listen(port, function() {
+  console.log("Server started on port " + port);
+});
